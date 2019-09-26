@@ -223,5 +223,6 @@ const enemies = people.filter(function(element){
 
 // Code Here
 const totallyAwesome = people.reduce(function(total, level){
-	return total += level.awesomeLevel;
-})
+	return total += level.awesomeLevel}, 0);
+
+
