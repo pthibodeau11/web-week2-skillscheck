@@ -5,7 +5,7 @@
 //Create an array called 'groceries' that contains three grocery items as a string
 
 // Code Here
-var groceries = ['apples', 'yogurt', 'cheese']
+const groceries = ['apples', 'yogurt', 'cheese']
 
 
 //////////////////STEP 2////////////////////
@@ -26,9 +26,10 @@ function setGroceryListTitle(x){
 
 // Code Here
 function addItem(item){
-    displayData();
     return groceries.push(item);
+    displayData();
 }
+
 //////////////////STEP 5////////////////////
 //Create a function called removeItem that takes in one parmater called index. 
 //Inside of the function remove the item from the groceries array above using splice. 
@@ -36,9 +37,10 @@ function addItem(item){
 
 // Code Here
 function removeItem(index){
+    return groceries.splice(index, 1);
     displayData();
-    return groceries.splice(index, 0);
 }
+
 //////////////////STEP 6////////////////////
 // Create a function called 'checkGroceryCount'. Inside of the function check the total number of groceries you need to get using .length. 
 // Using an else/if statement, check if the number is greater than or equal to 5, return the string 'That looks like a big trip' from the function. 
