@@ -6,7 +6,7 @@
 
 // CODE HERE
 let faveColors = ['green', 'blue', 'orange']
-console.log(faveColors)
+
 //////////////////Step 2////////////////////
 // Create an object called 'me' that has these keys: firstname, superHeroName, homeTown, superPowers, superPowerXP, profileImage. 
 
@@ -29,7 +29,7 @@ let me = {
     homeTown: 'Emporia', 
     superPowers: 'coding', 
     superPowerXP: Math.floor(Math.random() * 100) + 1,
-    profileImage: 'https://randomuser.me/api/portraits/med/lego/${Math.floor(Math.random() * 10) + 1 }.jpg',
+    profileImage: 'https://randomuser.me/api/portraits/med/lego/${Math.floor(Math.random()*10)+1}.jpg',
 }
 //////////////////Step 3////////////////////
 // Create three variables to hold some data off your me object. 
@@ -59,7 +59,7 @@ function setColor(arr){
             arr[i] = '#4D4DFF'
         }    
     }
-    background(arr[0], arr[1], arr[2])
+    background(faveColors[0], faveColors[1], faveColors[2])
 }
 
 
@@ -86,7 +86,7 @@ function setPowers(arr){
 
 function redactInfo(obj){
     for(var key in obj){
-        key = 'redacted'
+        return obj[key] = 'redacted'
     }
     redacted();
 }
