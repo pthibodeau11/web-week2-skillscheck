@@ -26,8 +26,8 @@ function setGroceryListTitle(x){
 
 // Code Here
 function addItem(item){
+    groceries.push(item);
     displayData();
-    return groceries.push(item);
 }
 
 //////////////////STEP 5////////////////////
@@ -37,8 +37,8 @@ function addItem(item){
 
 // Code Here
 function removeItem(index){
+    groceries.splice(index, 1);
     displayData();
-    return groceries.splice(index, 1);
 }
 
 //////////////////STEP 6////////////////////
